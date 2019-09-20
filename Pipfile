@@ -5,13 +5,12 @@ name = "pypi"
 
 [packages]
 fastapi = "*"
-pytest = "*"
-black = "*"
 uvicorn = "*"
-starlette = "*"
-requests = "*"
 
 [dev-packages]
+requests = "*"
+pytest = "*"
+black = "*"
 
 [requires]
 python_version = "3.6"
