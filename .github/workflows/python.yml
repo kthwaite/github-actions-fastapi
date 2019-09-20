@@ -28,8 +28,8 @@ jobs:
     - name: Check with pylint
       run: |
         # stop the build if there are style deficiencies
+        pipenv run pylint --version
         pipenv run pylint app.py
     - name: Test with pytest
       run: |
         pipenv run pytest app.py
-
