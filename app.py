@@ -15,6 +15,7 @@ api = FastAPI("github actions demo")  # pylint: disable=invalid-name
 class GreetingStyle(str, Enum):
     """Greeting styles used by `get_greeting`.
     """
+
     Affable = "affable"
     Unpleasant = "unpleasant"
     Aggressive = "aggressive"
@@ -33,6 +34,7 @@ _GREETING_FOR_STYLE = {
 class GreetingResponseModel(BaseModel):
     """Response model for `get_greeting`.
     """
+
     greeting: str
     name: str
     style: GreetingStyle
