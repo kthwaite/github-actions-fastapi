@@ -32,4 +32,4 @@ jobs:
         pipenv run pylint app.py
     - name: Test with pytest
       run: |
-        pipenv run pytest app.py
+        pipenv run pytest tests.py
