@@ -31,7 +31,7 @@ _GREETING_FOR_STYLE = {
 }
 
 
-class GreetingResponseModel(BaseModel):
+class GreetingResponseModel(BaseModel):  # pylint: disable=too-few-public-methods
     """Response model for `get_greeting`.
     """
 
